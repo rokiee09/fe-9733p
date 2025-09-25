@@ -1,5 +1,5 @@
 import React from 'react';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createHashRouter, RouterProvider } from 'react-router-dom';
 import Layout from './components/Layout';
 import UsersListPage from './pages/UsersListPage';
 import UserDetailPage from './pages/UserDetailPage';
@@ -35,7 +35,7 @@ const albumLoader = async ({ params }) => {
   return { album, photos, user };
 };
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: '/',
     element: <Layout />,
