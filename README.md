@@ -1,16 +1,81 @@
-# React + Vite
+# JSON Placeholder React Uygulaması
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Modern React teknolojileri kullanılarak geliştirilmiş JSON Placeholder API arayüzü.
 
-Currently, two official plugins are available:
+## 🚀 Özellikler
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Kullanıcı Yönetimi**: Tüm kullanıcıları listeleme ve detay görüntüleme
+- **Gönderiler**: Kullanıcı gönderilerini görüntüleme ve yorumları
+- **Albümler**: Kullanıcı albümlerini ve fotoğraflarını görüntüleme
+- **Yapılacaklar**: Kullanıcı todo listelerini görüntüleme
+- **Favoriler Sistemi**: Gönderileri ve fotoğrafları favorilere ekleme
+- **Responsive Tasarım**: Mobil ve masaüstü uyumlu arayüz
+- **Türkçe Arayüz**: Tamamen Türkçe kullanıcı arayüzü
 
-## React Compiler
+## 🛠️ Teknolojiler
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React 18** - Modern React hooks ve functional components
+- **TypeScript** - Tip güvenliği
+- **React Router DOM** - Sayfa yönlendirmeleri ve data loaders
+- **Zustand** - Global state yönetimi
+- **React Bootstrap** - UI bileşenleri
+- **Vite** - Hızlı geliştirme ortamı
 
-## Expanding the ESLint configuration
+## 📦 Kurulum
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+# Projeyi klonlayın
+git clone https://github.com/KULLANICI_ADINIZ/REPO_ADI.git
+
+# Bağımlılıkları yükleyin
+npm install
+
+# Geliştirme sunucusunu başlatın
+npm run dev
+```
+
+## 🎯 Kullanım
+
+1. **Ana Sayfa**: Kullanıcı listesini görüntüleyin
+2. **Kullanıcı Profili**: Kullanıcı detaylarına tıklayın
+3. **Sekmeler**: Gönderiler, Albümler, Yapılacaklar sekmelerini keşfedin
+4. **Favoriler**: İçerikleri favorilere ekleyin
+5. **Detay Sayfaları**: Gönderi ve albüm detaylarını inceleyin
+
+## 📱 Sayfalar
+
+- `/users` - Kullanıcı listesi
+- `/users/:userId` - Kullanıcı detayları
+- `/users/:userId/posts/:postId` - Gönderi detayları
+- `/users/:userId/albums/:albumId` - Albüm detayları
+- `/favorites` - Favoriler sayfası
+
+## 🔧 API Entegrasyonu
+
+JSON Placeholder API kullanılarak:
+- Kullanıcı verileri
+- Gönderiler ve yorumlar
+- Albümler ve fotoğraflar
+- Yapılacaklar listesi
+
+## 💾 Veri Saklama
+
+- **Zustand Store**: Global state yönetimi
+- **localStorage**: Favoriler kalıcı saklama
+- **React Router Loaders**: Sayfa yüklenirken veri çekme
+
+## 🎨 UI/UX
+
+- Modern Bootstrap tasarımı
+- Responsive grid sistemi
+- Loading durumları
+- Hata yönetimi
+- Türkçe arayüz
+
+## 📄 Lisans
+
+Bu proje MIT lisansı altında lisanslanmıştır.
+
+## 👨‍💻 Geliştirici
+
+Bu proje modern React teknolojileri kullanılarak geliştirilmiştir.
