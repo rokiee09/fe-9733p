@@ -1,5 +1,5 @@
 import React from 'react';
-import { createHashRouter, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Layout from './components/Layout';
 import UsersListPage from './pages/UsersListPage';
 import UserDetailPage from './pages/UserDetailPage';
@@ -35,7 +35,7 @@ const albumLoader = async ({ params }) => {
   return { album, photos, user };
 };
 
-const router = createHashRouter([
+const router = createBrowserRouter([
   {
     path: '/',
     element: <Layout />,
@@ -71,7 +71,9 @@ const router = createHashRouter([
       },
     ],
   },
-]);
+], {
+  basename: '/fe-9733p'
+});
 
 function App() {
   return <RouterProvider router={router} />;
